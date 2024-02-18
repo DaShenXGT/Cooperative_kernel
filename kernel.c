@@ -154,13 +154,12 @@ void SCH_Dispatch_Tasks(void)
             {
                 SCH_Delete_Task(Index);
             }
-            
         }
         /* 空闲任务 */
-		if(Idle_Hook != 0)
-		{
+	if(Idle_Hook != 0)
+	{
             Idle_Hook();
-		}
+	}
         /* 系统应答状态，根据实际情况添加 */
         //SCH_Report_Status();
     }
